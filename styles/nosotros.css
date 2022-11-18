@@ -1,0 +1,43 @@
+.main__nosotros{
+    max-width: 1440px;
+    margin: auto;
+}
+.nstrs__prcl-img{
+    width: 45vw;
+    height: 92vh;
+    max-width: 550px;
+    max-height: 1021px;
+    background: no-repeat center center/cover;
+    border-radius: 40px;
+    margin: 10vh 0;
+    box-shadow: 14px 15px 18px -1px rgba(0, 0, 0, 0.4)
+}
+.nstrs__prcl-img1{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+        )
+        ,url(./../Images/nosotros/nosotros1.jpg);
+}
+.nstrs__prcl-img2{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+        )
+        ,url(./../Images/nosotros/nosotros2.jpeg);
+}
+.nosotros__principal-crds{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nosotros__principal-crds2{
+ flex-direction: row-reverse;
+}
+.nstrs__prcl-text{
+    font-size: 1.7vw;
+    width: 35vw;
+    text-shadow:0 0 3px #f5c45b;
+}

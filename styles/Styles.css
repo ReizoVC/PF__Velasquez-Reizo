@@ -1,0 +1,181 @@
+/*--------------Generales--------------*/
+
+*{
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+li{list-style: none;}
+a{text-decoration: none; color: #252525;}
+.whatsApp__icon{
+    position: fixed;
+    width: 70px;
+    top: 80%;
+    right: 2%;
+}
+
+/*--------------Nav--------------*/
+header{
+    background-color: #BCBCBC;
+}
+.logo{
+    width: 140px;
+    margin: 10px;
+}
+.nav__container, .nav__options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav__container{
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 40px;
+}
+.nav__option{
+    color: #2C2B30;
+    font-size: 1.5em;
+    text-align: center;
+    margin: .5em;
+}
+.nav__option:hover{
+    color: #545457;
+}
+
+/*--------------Inicio--------------*/
+
+main{
+    background-color: #4F4F51;
+}
+.hero__container{
+    background-image: url(../Images/Inicio/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero__tittle{
+    color: #F9F9F9;
+    font-size: 11vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.hero__button{
+    color: #F9F9F9;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 7vw;
+    border: 6px solid #F9F9F9;
+    border-radius: 20px;
+    padding: 11px 22px;
+}
+.hero__button:hover{
+    color: #8f8f8f;
+    border-color: #8f8f8f;
+}
+         /*card img*/
+.card__beefits-cont{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card__benefit{
+    background-color: #F9F9F9;
+    min-width: 300px;
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+    height: 40vh;
+    margin: 30px;
+    padding: 5px 0;
+}
+.card__tittle{
+    align-self: center;
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.card__img{
+    background: no-repeat center center/cover;
+    height: 400px;
+}
+
+.card__img1{background-image: url(../Images/Inicio/ahorra.jpg);}
+.card__img2{background-image: url(../Images/Inicio/corazonFuerte.jpeg);}
+.card__img3{background-image: url(../Images/Inicio/duermeBien.jpg);}
+.card__img4{background-image: url(../Images/Inicio/duermeBien.jpg);}
+
+.card__button{
+    padding: .3em 1em .3em 1.1em;
+    margin: 7px 0;
+    font-size: 1.6em;
+    font-weight: 600;
+    align-self: center;
+    border: .2em solid #2C2B30;
+    border-radius: .5em;
+}
+
+/*footer*/
+footer{
+    background-color: #BCBCBC;
+}
+.footer__continer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.footer__lg{
+    margin-top: 10px;
+}
+.social__media{
+    height: 50px;
+    margin: 15px 10px;
+}
+.copyrigth{
+    color: #2C2B30;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+@media (min-width:970px) {
+
+    /*----------nav-desktop----------*/
+    .nav__container{
+        justify-content: space-between;
+    }
+     
+    .card__beefits-cont{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .card__benefit{
+       min-height: 75vh;
+       border-radius: 0.5em;
+    }
+    .card__img{
+        min-height: 83%;
+    }
+    .footer__continer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        justify-items: center;
+        max-width: 1400px;
+        margin: auto;
+    }
+    .copyrigth{
+        grid-column: 1/3;
+    }
+}
