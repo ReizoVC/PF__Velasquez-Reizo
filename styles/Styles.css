@@ -8,11 +8,13 @@
 }
 li{list-style: none;}
 a{text-decoration: none; color: #252525;}
+body{background-color: #4F4F51;}
 .whatsApp__icon{
     position: fixed;
     width: 70px;
     top: 80%;
     right: 2%;
+    display: none;
 }
 
 /*--------------Nav--------------*/
@@ -47,9 +49,6 @@ header{
 
 /*--------------Inicio--------------*/
 
-main{
-    background-color: #4F4F51;
-}
 .hero__container{
     background-image: url(../Images/Inicio/hero.jpg);
     background-repeat: no-repeat;
@@ -97,6 +96,8 @@ main{
     height: 40vh;
     margin: 30px;
     padding: 5px 0;
+    box-shadow: 10px 10px 8px #1f1f1f;
+    transition: transform 1s;
 }
 .card__tittle{
     align-self: center;
@@ -123,10 +124,14 @@ main{
     border: .2em solid #2C2B30;
     border-radius: .5em;
 }
+.card__benefit:hover{
+    transform: translateY(-25px);
+}
 
 /*footer*/
 footer{
     background-color: #BCBCBC;
+    margin-top: 2em;
 }
 .footer__continer{
     display: flex;
