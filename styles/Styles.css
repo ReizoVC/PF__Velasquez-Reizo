@@ -47,6 +47,31 @@ header{
     color: #545457;
 }
 
+/*--------------Footer--------------*/
+footer{
+    background-color: #BCBCBC;
+    margin-top: 2em;
+}
+.footer__continer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.footer__lg{
+    margin-top: 10px;
+}
+.social__media{
+    height: 50px;
+    margin: 15px 10px;
+}
+.copyrigth{
+    color: #2C2B30;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
 /*--------------Inicio--------------*/
 
 .hero__container{
@@ -128,30 +153,7 @@ header{
     transform: translateY(-25px);
 }
 
-/*footer*/
-footer{
-    background-color: #BCBCBC;
-    margin-top: 2em;
-}
-.footer__continer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-}
-.footer__lg{
-    margin-top: 10px;
-}
-.social__media{
-    height: 50px;
-    margin: 15px 10px;
-}
-.copyrigth{
-    color: #2C2B30;
-    font-weight: 600;
-    margin-bottom: 3px;
-}
+
 
 @media (min-width:970px) {
 
@@ -182,5 +184,367 @@ footer{
     }
     .copyrigth{
         grid-column: 1/3;
+    }
+}
+
+/*--------------Nosotros--------------*/
+
+.main__nosotros{
+    margin: 2em 1em;
+}
+
+.nosotros__principal-crds{
+    background-color: #D9D9D9;
+    padding: .5em;
+    margin: 1em 0;
+    border-radius: .4em;
+    display: flex;
+    flex-direction: column;
+}
+.nstrs__prcl-img{
+    margin-bottom: .5em;
+    height: 45vh;
+    width: 100%;
+    background: no-repeat center center/cover;
+    border-radius: .5em;
+}
+.nstrs__prcl-img1{
+    background-image: url(../images/nosotros/nosotros1.jpg);
+}
+.nstrs__prcl-img2{
+    background-image: url(../images/nosotros/nosotros2.jpeg);
+}
+.nstrs__btn{
+    background-color: #222222;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: .5em;
+    font-size: 1.2em;
+}
+.nstrs__btn::before{
+    content: 'La idea surgio de mi amigo cercano Eliser un dia de ocio mientras manejabamos haciendo una ruta, la idea era abrir un taller de mantenimiento de bibicletas, en plena pandemia empezamos a buscar un local para dar inicio a dicho emprendimiento. Un dos de mayo del 2021 se apertura por primera vez, haciendo algunas reparaciones basicas para luego pasar a hacer mantenimientos en general, pintados, restauracion y venta de bicicletas, Nuestra vision es la apertura ve varios locales a nivel distrital y que nuestra marca sea reconocida por la responsabilidad y eficaca del servicio';
+    text-align: left;
+    display: none;
+}
+.nstrs__prcl-text{
+    display: none;
+}
+.nstrs__btn:hover:before{
+    display: inline-block;
+    color: #222222;
+}
+.nstrs__btn:hover{
+    background-color: #D9D9D9;
+    color: transparent;
+}
+.nstrs__btn2::before{
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum iure tempora unde, ducimus, ut cumque vitae in quasi alias obcaecati numquam. Adipisci, quos! Assumenda asperiores incidunt hic enim voluptate nesciunt, dolorum eum velit. Enim inventore quia officia quisquam quaerat nulla pariatur aperiam quis atque exercitationem, excepturi possimus delectus consectetur quos corrupti et velit placeat adipisci cum magni aliquam impedit! Nisi.';
+}
+@media (min-width: 850px){
+    .nstrs__btn{
+        display: none;
+    }
+    .nstrs__prcl-text{
+        display: inline-block;
+        font-size: 1.5em;
+        max-width: 60vw;
+        align-self: center;
+        margin: 0 2em;
+    }
+    .nosotros__principal-crds{
+        flex-direction: row;
+    }
+    .nosotros__principal-crds2{
+        flex-direction: row-reverse;
+    }
+    .main__nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 1200px){
+    .main__nosotros{
+        max-width: 1400px;
+        margin: auto;
+    }
+    .nosotros__principal-crds{
+        min-width: 1200px;
+        max-width: 1300px;
+    }
+    .nosotros__principal-crds2{
+        align-self: flex-end;
+    }
+}
+
+/*--------------Catalogo--------------*/
+
+.catalogo__container{
+    max-width: 1152px;
+    margin: auto;
+    display: grid;
+    min-height: 80vh;
+    grid-template-columns: repeat(3,1fr);
+}
+.catalogo__option{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 2em;
+    border-radius: 12%;
+    color: #F2E6CE;
+    background: no-repeat center center/cover;
+}
+.catalogo__option-1{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+        )
+        ,url(../Images/Catalogo/accesorios.jpg);    
+}
+.catalogo__option-2{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+        )
+        ,url(../Images/Catalogo/repuestos.jpg);    
+}
+.catalogo__option-3{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+        )
+        ,url(../Images/Catalogo/servicioTecnico.jpg);    
+}
+.catalogo__option-4{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+        )
+        ,url(../Images/Catalogo/restauracion.jpg);   
+}
+.catalogo__option-5{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+        )
+        ,url(../Images/Catalogo/bicicletas.jpg);    
+}
+.catalogo__option-6{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+        )
+        ,url(../Images/Catalogo/armado.jpg);   
+}
+
+@media (max-width:970px) {
+    .catalogo__container{
+        grid-template-columns: 1fr 1fr;
+        max-width: 800px;
+    }
+}
+
+@media (max-width:520px) {
+    .catalogo__container{
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+    .catalogo__option{
+        min-height: 30vh;
+    }
+}
+
+/*--------------Opiniones--------------*/
+
+.opinions__container, .opinion__form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: auto;
+}
+.opinion__form{
+    background-color: rgb(255,255,255);
+    margin: 1em auto;
+    box-shadow: 14px 15px 18px -1px rgba(0, 0, 0, 0.4);
+}
+.opinions__container{
+    justify-content: center;
+}
+.opinions__publi-coments{
+    background-color: rgb(255,255,255);
+    color: black;
+    box-shadow: 14px 15px 18px -1px rgba(0, 0, 0, 0.4);
+    width: 15vw;
+    min-width: 190px;
+    min-height:fit-content;
+    /*border-radius: 18%;*/
+    margin: 15px;
+    padding: 1.2%;
+}
+.opinions__img{
+    max-width: 100%;
+}
+.opinion__top-cont{
+    display: flex;
+    justify-content: space-between;
+}
+.opinion__top{
+    margin: 10px 40px;
+}
+.opinion__field{
+    margin: 10px;
+    width: 100%;
+    outline: none;
+}
+.opinion__cont{
+    width: 98%;
+}
+
+#nombre_opinion{
+    font-size: 1.5em;
+    outline: none;
+}
+.opinion__button{
+    padding: 5px 10px;
+}
+@media (max-width: 430px){
+    .opinions__publi-coments{
+        width: 80%;
+    }
+}
+
+/*--------------Contactanos--------------*/
+
+.form__cntctInfo{
+    display: none;
+}
+.main__contacto{
+    padding: 0 15px;
+}
+.contacto__body{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+        )
+        ,url(../Images/Contactanos/form_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.form__principal{
+    background-color:#fff;
+    max-width: 1400px;
+    min-height: 80vh;
+    margin: 50px auto;
+    text-align: center;
+}
+.form__title{
+    padding-top: 30px;
+    font-size: 3em;
+    margin: 15px;
+}
+.form__cntctInfo{
+    text-align: left;
+    padding: 50px;
+}
+.form__contacto{
+    display: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+.form__element{
+    width: 100%;
+    background: rgb(230, 230, 230);
+    font-size: 2em;
+    margin: 5px 0;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+}
+.form__element:hover{
+    border-left: solid 2px rgb(190, 190, 190);
+    background: rgb(225, 225, 225);
+}
+.form__button{
+    font-size: 1.5em;
+    border: solid 1px rgb(138, 138, 138);
+    border-radius: 7px;
+    width: 100%;
+    height: 3rem;
+}
+.form__button:hover{
+    background-color: rgb(209, 209, 209);
+    border-color: rgb(209, 209, 209);
+}
+@media (min-width:780px) {
+    .form__cntctInfo{
+        display: block;
+        text-align: left;
+        padding: 50px;
+    }
+    .form__principal{
+        background-color:#fff;
+        max-width: 1400px;
+        height: 80vh;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .form__title{
+        padding-top: 30px;
+        font-size: 5vh;
+        margin: 15px;
+    }
+    .form__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5vh 60vh 
+    }
+    .form__cntctInfo{
+        text-align: left;
+        padding: 50px;
+    }
+    
+    .form__cntctInfo-redes{
+        display: flex;
+        justify-content: center;
+    }
+    .form__contacto{
+        grid-column: 1/3;
+        height: fit-content;
+        padding: 15px;
+    }
+    .form{
+        border-left: solid 3px gray;
+    }
+    .form__subtittle{
+        margin: 10px;
+        font-size: 3em;
+    }
+    .form__sm{
+        padding: 0 20px;
+        margin: 20px 0;
+    }
+    .form__cntctInfo-text{
+        font-size: 1.6em;
+        margin-left: 50px; 
+    }
+    .form__copy{
+        text-align: center;
+        margin-top: 30px;
     }
 }
