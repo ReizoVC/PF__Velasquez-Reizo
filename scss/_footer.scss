@@ -1,0 +1,23 @@
+footer{
+    background-color: #BCBCBC;
+    margin-top: 2em;
+}
+.footer__continer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.footer__lg{
+    margin-top: 10px;
+}
+.social__media{
+    height: 50px;
+    margin: 15px 10px;
+}
+.copyrigth{
+    color: #2C2B30;
+    font-weight: 600;
+    margin-bottom: 3px;
+}

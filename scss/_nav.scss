@@ -1,0 +1,28 @@
+header{
+    background-color: #BCBCBC;
+}
+.logo{
+    width: 140px;
+    margin: 10px;
+}
+.nav__container, .nav__options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav__container{
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 40px;
+}
+.nav__option{
+    color: #2C2B30;
+    font-size: 1.5em;
+    text-align: center;
+    margin: .5em;
+}
+.nav__option:hover{
+    color: #545457;
+}

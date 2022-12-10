@@ -1,0 +1,112 @@
+.hero__container{
+    background-image: url(../images/inicio/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero__tittle{
+    color: $color1;
+    font-size: 11vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.hero__button{
+    color: $color1;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 7vw;
+    border: 6px solid $color1;
+    border-radius: 20px;
+    padding: 11px 22px;
+}
+.hero__button:hover{
+    color: $color2;
+    border-color: $color2;
+}
+         /*card img*/
+.card__beefits-cont{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card__benefit{
+    background-color: $color1;
+    min-width: 300px;
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+    height: 40vh;
+    margin: 30px;
+    padding: 5px 0;
+    box-shadow: 10px 10px 8px #1f1f1f;
+    transition: transform 1s;
+}
+.card__tittle{
+    align-self: center;
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.card__img{
+    background: no-repeat center center/cover;
+    height: 400px;
+}
+
+.card__img1{background-image: url(../images/inicio/ahorra.jpg);}
+.card__img2{background-image: url(../images/inicio/corazonFuerte.jpeg);}
+.card__img3{background-image: url(../images/inicio/duermeBien.jpg);}
+.card__img4{background-image: url(../images/inicio/duermeBien.jpg);}
+
+.card__button{
+    padding: .3em 1em .3em 1.1em;
+    margin: 7px 0;
+    font-size: 1.6em;
+    font-weight: 600;
+    align-self: center;
+    border: .2em solid #2C2B30;
+    border-radius: .5em;
+}
+.card__benefit:hover{
+    transform: translateY(-25px);
+}
+
+
+
+@media (min-width:970px) {
+
+    /*----------nav-desktop----------*/
+    .nav__container{
+        justify-content: space-between;
+    }
+     
+    .card__beefits-cont{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .card__benefit{
+       min-height: 75vh;
+       border-radius: 0.5em;
+    }
+    .card__img{
+        min-height: 83%;
+    }
+    .footer__continer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        justify-items: center;
+        max-width: 1400px;
+        margin: auto;
+    }
+    .copyrigth{
+        grid-column: 1/3;
+    }
+}
