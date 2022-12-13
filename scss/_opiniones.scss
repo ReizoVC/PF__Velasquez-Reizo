@@ -8,6 +8,7 @@
     background-color: rgb(255,255,255);
     margin: 1em auto;
     box-shadow: 14px 15px 18px -1px rgba(0, 0, 0, 0.4);
+    padding: 5px;
 }
 .opinions__container{
     justify-content: center;
@@ -52,5 +53,16 @@
 @media (max-width: 430px){
     .opinions__publi-coments{
         width: 80%;
+    }
+    .opinion__form{
+        margin: 1em 5px;
+        padding: 3px;
+    }
+    .opinion__top-cont{
+        display: flex;
+        flex-direction: column;
+    }
+    .opinion__field{
+        max-width: 95%;
     }
 }

@@ -88,7 +88,7 @@ footer {
 }
 
 .hero__container {
-  background-image: url(../images/inicio/hero.jpg);
+  background-image: url(../images/inicio/hero.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -156,19 +156,19 @@ footer {
 }
 
 .card__img1 {
-  background-image: url(../images/inicio/ahorra.jpg);
+  background-image: url(../images/inicio/ahorra.webp);
 }
 
 .card__img2 {
-  background-image: url(../images/inicio/corazonFuerte.jpeg);
+  background-image: url(../images/inicio/corazonFuerte.webp);
 }
 
 .card__img3 {
-  background-image: url(../images/inicio/duermeBien.jpg);
+  background-image: url(../images/inicio/duermeBien.webp);
 }
 
 .card__img4 {
-  background-image: url(../images/inicio/duermeBien.jpg);
+  background-image: url(../images/inicio/duermeBien.webp);
 }
 
 .card__button {
@@ -235,11 +235,11 @@ footer {
 }
 
 .nstrs__prcl-img1 {
-  background-image: url(../images/nosotros/nosotros1.jpg);
+  background-image: url(../images/nosotros/nosotros1.webp);
 }
 
 .nstrs__prcl-img2 {
-  background-image: url(../images/nosotros/nosotros2.jpeg);
+  background-image: url(../images/nosotros/nosotros2.webp);
 }
 
 .nstrs__btn {
@@ -333,27 +333,27 @@ footer {
 }
 
 .catalogo__option-1 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/catalogo/accesorios.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/catalogo/accesorios.webp);
 }
 
 .catalogo__option-2 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/catalogo/repuestos.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/catalogo/repuestos.webp);
 }
 
 .catalogo__option-3 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/catalogo/servicioTecnico.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/catalogo/servicioTecnico.webp);
 }
 
 .catalogo__option-4 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/catalogo/restauracion.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/catalogo/restauracion.webp);
 }
 
 .catalogo__option-5 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/catalogo/bicicletas.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/catalogo/bicicletas.webp);
 }
 
 .catalogo__option-6 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/catalogo/armado.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/catalogo/armado.webp);
 }
 
 @media (max-width: 970px) {
@@ -382,6 +382,7 @@ footer {
   background-color: rgb(255, 255, 255);
   margin: 1em auto;
   box-shadow: 14px 15px 18px -1px rgba(0, 0, 0, 0.4);
+  padding: 5px;
 }
 
 .opinions__container {
@@ -436,6 +437,17 @@ footer {
   .opinions__publi-coments {
     width: 80%;
   }
+  .opinion__form {
+    margin: 1em 5px;
+    padding: 3px;
+  }
+  .opinion__top-cont {
+    display: flex;
+    flex-direction: column;
+  }
+  .opinion__field {
+    max-width: 95%;
+  }
 }
 .form__cntctInfo {
   display: none;
@@ -446,7 +458,7 @@ footer {
 }
 
 .contacto__body {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/contactanos/form_background.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/contactanos/form_background.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
