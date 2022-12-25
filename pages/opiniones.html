@@ -14,19 +14,21 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <div class="nav__container">
-            <a href="../index.html"><img src="../images/nav/logo.webp" alt="logo" class="logo"></a>
-            <nav class="navegacion__op-cont">
-                <ul class="nav__options">
-                    <li><a class="nav__option" href="../index.html">Inicio</a></li>
-                    <li><a class="nav__option" href="nosotros.html">Nosotros</a></li>
-                    <li><a class="nav__option" href="catalogo.html">Catalogo</a></li>
-                    <li><a class="nav__option" href="opiniones.html">Opiniones</a></li>
-                    <li><a class="nav__option" href="contactanos.html">Contactanos</a></li>
-                </ul>
-            </nav>
-        </div>  
+    <header class="nav">
+        <div class="nav-conteiner">
+            <a href="index.html"><img src="../images/nav/logo.webp" alt="logo" class="logo"></a>
+            <label for="menu" class="nav-label">
+                <img src="../assets/menu.svg" alt="menu" class="nav-img">
+            </label>
+            <input type="checkbox" id="menu" class="nav-input">
+            <ul class="nav-menu">
+                <li><a class="nav__option" href="../index.html">Inicio</a></li>
+                <li><a class="nav__option" href="nosotros.html">Nosotros</a></li>
+                <li><a class="nav__option" href="catalogo.html">Catalogo</a></li>
+                <li><a class="nav__option" href="opiniones.html">Opiniones</a></li>
+                <li><a class="nav__option" href="contactanos.html">Contactanos</a> 
+            </ul>
+         </div>
     </header>
     <main class="opinions__main">
         <section class="opinions__container">
